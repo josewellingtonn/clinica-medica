@@ -1,0 +1,129 @@
+:root {
+    --cor-fundo: #FFFFFF;
+    --cor-texto-principal: #464646;
+    --cor-texto-secundaria: #FFFFFF;
+    --cor-destaque-principal: #4894FF;
+    --cor-destaque-secundaria: #FFB050;
+    --cor-destaque-terciaria: #ECECEC;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* CABECALHO */
+
+.cabecalho {
+    padding: 2em 1em 1.37em 1em;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.cabecalho__foto-perfil {
+    width: 20%;
+    border-radius: 100%;
+}
+
+.cabecalho__info__nome {
+    font-weight: 700;
+    font-size: 1.37em;
+    color: var(--cor-texto-principal);
+    margin-bottom: 0.3em;
+}
+
+.cabecalho__info__consultas {
+    font-size: 0.87em;
+    color: var(--cor-texto-principal);
+}
+
+/* LISTA DE CONSULTAS */
+
+.conteudo {
+    padding: 1em 4%;
+}
+
+.consultas__data {
+    font-weight: 700;
+    color: var(--cor-texto-principal);
+}
+
+.consultas__consulta {
+    padding: 1.25em 1em;
+}
+
+.consultas__consulta__paciente {
+    display: flex;
+    gap: 1em;
+}
+
+.consultas__consulta__paciente__foto {
+    width: 2em;
+    height: 2em;
+    border-radius: 100%;
+}
+
+.consultas__consulta__paciente__infos {
+    display: flex;
+    gap: 1.5em;
+}
+
+.consultas__consulta__paciente__infos__nome {
+    font-size: 0.87em;
+    color: var(--cor-texto-principal);
+    font-weight: 700;
+    margin-bottom: 0.50em;
+}
+
+.consultas__consulta__paciente__infos__tipo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.40em;
+}
+
+.consultas__consulta__paciente__infos__tipo-consulta {
+    font-size: 0.75em;
+    color: var(--cor-texto-principal);
+}
+
+.consultas__consulta__paciente__infos__chat {
+    background: transparent;
+    border: 0;
+}
+
+.consultas__consulta__horario {
+    display: block;
+    margin: 1.37em 0 0.5em 0;
+    font-size: 0.75em;
+    font-weight: 500;
+    color: var(--cor-texto-principal);
+}
+
+.consultas__consulta__botoes {
+    display: flex;
+    gap: 1.12em;
+}
+
+.consultas__consulta__botao {
+    border-radius: 0.5em;
+    border: 0;
+    font-size: 0.87em;
+    font-weight: 500;
+    color: var(--cor-fundo);
+    padding: 0.81em 1em;
+    background-color: var(--cor-destaque-secundaria);
+}
+
+.consultas__consulta__botao-secundario {
+    color: var(--cor-texto-principal);
+    background-color: var(--cor-destaque-terciaria);
+}
+
+.consultas__consulta__botao-terciario {
+    width: 100%;
+    color: var(--cor-fundo);
+    background-color: var(--cor-destaque-principal);
+}
