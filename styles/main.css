@@ -222,10 +222,21 @@ body {
     color: var(--cor-destaque-principal);
 }
 
+@media screen and (min-width: 768px) {
+
+    .consultas__consulta {
+        width: 42%;
+        display: inline-block;
+        margin: 1.25em 1em 0 0;
+    }
+
+}
+
 @media screen and (min-width: 1024px) {
 
     .cabecalho {
-        justify-content: center;
+        max-width: 900px;
+        margin: 0 auto;
     }
 
     .cabecalho__foto-perfil {
@@ -233,12 +244,16 @@ body {
     }
 
     .conteudo {
-        padding: 2em 4% 5em 4%;
+        padding: 2.5em 2%;
     }
 
     .consultas {
-        max-width: 400px;
+        max-width: 900px;
         margin: 0 auto 2em auto;
+    }
+
+    .consultas__consulta {
+        width: 26%;
     }
 
 }
