@@ -8,6 +8,10 @@
     --cor-destaque-terciaria: #ECECEC;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: var(--cor-fundo-secundaria);
     font-family: 'Montserrat', sans-serif;
@@ -169,6 +173,7 @@ body {
     display: inline-block;
     border-radius: 100%;
     box-shadow: 0px 0px 5px 0px rgba(72,148,255,1);
+    cursor: pointer;
 }
 
 .botao-escondido {
@@ -209,8 +214,16 @@ body {
     gap: 1em;
 }
 
+.rodape__navegacao__lista__item {
+    cursor: pointer;
+}
+
 .rodape__navegacao__lista__item > a {
     text-decoration: none;
+}
+
+.rodape__navegacao__lista__item:hover > a > span {
+    color: var(--cor-destaque-principal);
 }
 
 .rodape__navegacao__lista__item__nome {
@@ -236,7 +249,8 @@ body {
 
     .cabecalho {
         max-width: 900px;
-        margin: 0 auto;
+        margin-left: 10%;
+        width: 90%;
     }
 
     .cabecalho__foto-perfil {
@@ -245,6 +259,8 @@ body {
 
     .conteudo {
         padding: 2.5em 2%;
+        width: 90%;
+        margin-left: 10%;
     }
 
     .consultas {
@@ -253,7 +269,29 @@ body {
     }
 
     .consultas__consulta {
-        width: 26%;
+        width: 30%;
+    }
+
+    .rodape {
+        top: 0;
+        left: 0;
+        width: 10%;
+        max-width: 144px;
+    }
+
+    .rodape__navegacao__lista {
+        gap: 2em;
+        flex-direction: column;
+        margin-top: 50%;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .cabecalho {
+        margin: 0 auto;
+        padding-left: 5%;
     }
 
 }
