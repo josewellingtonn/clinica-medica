@@ -3,7 +3,9 @@
     --cor-fundo-secundaria: #e5e5e54d;
     --cor-texto-principal: #464646;
     --cor-texto-secundaria: #FFFFFF;
+    --cor-texto-placeholder: #a0a0a0;
     --cor-destaque-principal: #4894FF;
+    --cor-hover-principal: #4373DC;
     --cor-destaque-secundaria: #FFB050;
     --cor-destaque-terciaria: #ECECEC;
 }
@@ -104,6 +106,7 @@ body {
 .consultas__consulta__paciente__infos__chat {
     background: transparent;
     border: 0;
+    cursor: pointer;
 }
 
 .consultas__consulta__horario {
@@ -127,6 +130,7 @@ body {
     color: var(--cor-fundo-principal);
     padding: 0.81em 1em;
     background-color: var(--cor-destaque-secundaria);
+    cursor: pointer;
 }
 
 .consultas__consulta__botao-secundario {
@@ -235,6 +239,10 @@ body {
     color: var(--cor-destaque-principal);
 }
 
+.cadastro {
+    display: none;
+}
+
 @media screen and (min-width: 768px) {
 
     .consultas__consulta {
@@ -270,6 +278,104 @@ body {
 
     .consultas__consulta {
         width: 30%;
+    }
+
+    .cadastro {
+        display: block;
+        background-color: var(--cor-fundo-principal);
+        max-width: 800px;
+        margin: 5em auto;
+        border-radius: 80px;
+        padding: 5.56em;
+    }
+
+    .cadastro__titulo {
+        text-align: center;
+        margin-bottom: 3em;
+        font-size: 1.70em;
+        font-weight: 700;
+        color: var(--cor-texto-principal);
+    }
+
+    .cadastro__formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5em;
+    }
+
+    .cadastro__formulario__item {
+        width: 100%;
+        max-width: 500px;
+        padding: 0 4%;
+    }
+
+    .cadastro__formulario__item__label {
+        color: var(--cor-texto-principal);
+    }
+
+    .cadastro__formulario__item__campo {
+        width: 100%;
+        background-color: var(--cor-fundo-principal);
+        border: 1px solid var(--cor-destaque-terciaria);
+        border-radius: 0.5em;
+        margin-top: 0.5em;
+        padding: 1em;
+        outline: none;
+    }
+
+    .cadastro__formulario__item__radio {
+        display: none;
+    }
+
+    .radio-personalizado {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+    }
+
+    .radio-btn {
+        width: 20px;
+        height: 20px;
+        border: 1px solid var(--cor-texto-principal);
+        border-radius: 100%;
+    }
+
+    .cadastro__formulario__item__radio:checked + .radio-personalizado > .radio-btn {
+        background: radial-gradient(circle, var(--cor-destaque-principal) 45%, transparent 50%);
+        border: 1px solid var(--cor-destaque-principal);
+    }
+
+    .cadastro__formulario__item__campo::placeholder {
+        color: var(--cor-texto-placeholder);
+    }
+
+    .cadastro__formulario__item__campo:focus {
+        border: 2px solid var(--cor-destaque-principal);
+    }
+
+    .campo_maior {
+        height: 100px;
+        resize: none;
+    }
+
+    .cadastro__formulario__item__botao {
+        width: 50%;
+        padding: 1em;
+        border: 0;
+        background-color: var(--cor-destaque-principal);
+        border-radius: 0.5em;
+        color: var(--cor-fundo-principal);
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .cadastro__formulario__item__botao:hover {
+        background-color: var(--cor-hover-principal);
+    }
+
+    .botao-flutuante__container {
+        display: none;
     }
 
     .rodape {

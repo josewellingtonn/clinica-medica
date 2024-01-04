@@ -209,6 +209,53 @@
                 </div>
             </section>
 
+            <section class="cadastro">
+                <h2 class="cadastro__titulo">Cadastro de consulta</h2>
+                <form class="cadastro__formulario">
+                    <div class="cadastro__formulario__item">
+                        <label class="cadastro__formulario__item__label" for="input_nome_paciente">Nome</label>
+                        <br>
+                        <input class="cadastro__formulario__item__campo" type="text" id="input_nome_paciente" placeholder="Nome do paciente">
+                    </div>
+
+                    <div class="cadastro__formulario__item">
+                        <input class="cadastro__formulario__item__radio" type="radio" name="tipo_consulta" id="input_consulta_video" value="Consulta por video">
+                        <label class="radio-personalizado" for="input_consulta_video">
+                            <div class="radio-btn"></div>
+                            <span class="radio-label">Consulta por vídeo</span>
+                        </label>
+                        <br>
+                        <input class="cadastro__formulario__item__radio" type="radio" name="tipo_consulta" id="input_consulta_casa" value="Consulta na casa">
+                        <label class="radio-personalizado" for="input_consulta_casa">
+                            <div class="radio-btn"></div>
+                            <span class="radio-label">Consulta na casa</span>
+                        </label>
+                    </div>
+
+                    <div class="cadastro__formulario__item">
+                        <label class="cadastro__formulario__item__label" for="input_data_consulta">Data da Consulta</label>
+                        <br>
+                        <input class="cadastro__formulario__item__campo" type="date" id="input_data_consulta" min="2024-01-01">
+                    </div>
+
+                    <div class="cadastro__formulario__item">
+                        <label class="cadastro__formulario__item__label" for="input_hora_consulta">Horário da Consulta</label>
+                        <br>
+                        <input class="cadastro__formulario__item__campo" type="time" id="input_hora_consulta">
+                    </div>
+
+                    <div class="cadastro__formulario__item"> 
+                        <label class="cadastro__formulario__item__label" for="input_observacao">Observações</label>
+                        <br>
+                        <textarea class="cadastro__formulario__item__campo campo_maior" id="input_observacao" placeholder="Escreva as observações aqui..."></textarea>
+                    </div>
+
+                    <div class="cadastro__formulario__item">
+                        <input class="cadastro__formulario__item__botao" type="submit" value="Enviar">
+                    </div>
+                </form>
+            </section>
+
             <div class="botao-flutuante__container">
                 <input class="botao-flutuante__input" type="checkbox" id="botao-flutuante">
                 <label for="botao-flutuante">
