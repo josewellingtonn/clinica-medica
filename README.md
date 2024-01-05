@@ -26,7 +26,7 @@ O projeto Clínica Médica surgiu a partir do desafio #7DaysOfCode HTML e CSS. O
 
 ## 📁 Acesso ao projeto
 
-[Veja o projeto final em funcionamento.]()
+[Veja o projeto final em funcionamento.](https://josewellingtonn.github.io/clinica-medica/)
 
 Neste repositório você tem acesso a todos os arquivos necessários para execução.
 
